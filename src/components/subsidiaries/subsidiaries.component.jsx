@@ -11,6 +11,7 @@ import {
 } from "../../redux/navToggle/navToggleAction";
 
 import classes from "./subsidiaries.module.css";
+import { servicesData } from "../servicesSection/servicesData";
 
 const Subsidiaries = ({
   showSubsidiary,
@@ -26,24 +27,24 @@ const Subsidiaries = ({
     history.push(path);
   };
 
-  const services = [
-    {
-      label: "Innovation & Sustainability Advocacy",
-      path: "/services/solarinstallations",
-    },
-    {
-      label: "EV Charger Installations",
-      path: "/services/CCTVinstallations",
-    },
-    {
-      label: "Fleet Electrification",
-      path: "/services/generalhousewiring",
-    },
-    {
-      label: "Consulting Services",
-      path: "/services/partnership",
-    },
-  ];
+  // const services = [
+  //   {
+  //     label: "Innovation & Sustainability Advocacy",
+  //     path: "/services/solarinstallations",
+  //   },
+  //   {
+  //     label: "EV Charger Installations",
+  //     path: "/services/CCTVinstallations",
+  //   },
+  //   {
+  //     label: "Fleet Electrification",
+  //     path: "/services/generalhousewiring",
+  //   },
+  //   {
+  //     label: "Consulting Services",
+  //     path: "/services/partnership",
+  //   },
+  // ];
 
   return (
     <div
@@ -51,15 +52,15 @@ const Subsidiaries = ({
         isMobile ? classes.mobileShowContainer : ""
       }`}
     >
-      {services.map((service, index) => (
+      {servicesData.map((service, index) => (
         <div key={index}>
           <div
             className={classes.link}
             onClick={() => navigateTo(service.path)}
           >
-            {service.label}
+            {service.title}
           </div>
-          {index < services.length - 1 && <hr />}
+          {index < servicesData.length - 1 && <hr />}
         </div>
       ))}
     </div>

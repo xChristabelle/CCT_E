@@ -2,6 +2,7 @@ export const servicesData = [
   {
     title: "EV Charger Installations",
     imageUrl: "./images/solarField.avif",
+    path: "/services/EVchargerinstallations",
     id: 1,
     linkUrl: "Fleet Electrification",
     description:
@@ -10,6 +11,7 @@ export const servicesData = [
   {
     title: "Fleet Electrification",
     imageUrl: "./images/solarField.avif", // Reusing the EV Charger Installations image
+    path: "/services/EVchargerinstallations",
     id: 2,
     linkUrl: "Fleet Electrification",
     description:
@@ -18,6 +20,7 @@ export const servicesData = [
   {
     title: "Site Assessments",
     imageUrl: "./images/cctvFix.jpg",
+    path: "/services/EVchargerinstallations",
     id: 3,
     linkUrl: "Consulting Services",
     description:
@@ -26,6 +29,7 @@ export const servicesData = [
   {
     title: "Project Management",
     imageUrl: "./images/cctvFix.jpg", // Reusing the Site Assessments image
+    path: "/services/CCTEProjectManagement",
     id: 4,
     linkUrl: "Project Management",
     description:
@@ -34,6 +38,7 @@ export const servicesData = [
   {
     title: "Consulting Services",
     imageUrl: "./images/cctvFix.jpg", // Reusing the Site Assessments image
+    path: "/services/partnershipDevelopment",
     id: 5,
     linkUrl: "Consulting Services",
     description:
@@ -42,14 +47,16 @@ export const servicesData = [
   {
     title: "Maintenance & Support",
     imageUrl: "./images/electricalWiring.jpg",
+    path: "/services/CCTEProjectManagement",
     id: 6,
     linkUrl: "Training & Workforce Development",
-    description:
+    description:  
       "Provides ongoing maintenance contracts and technical support to keep charging stations operational and efficient.",
   },
   {
     title: "Training & Workforce Development",
     imageUrl: "./images/electricalWiring.jpg", // Reusing the Maintenance & Support image
+    path: "/services/partnershipDevelopment",
     id: 7,
     linkUrl: "Training & Workforce Development",
     description:
@@ -58,6 +65,7 @@ export const servicesData = [
   {
     title: "Partnership Development",
     imageUrl: "./images/team.jpg",
+    path: "/services/partnershipDevelopment",
     id: 8,
     noMargin: "noMargin",
     linkUrl: "partnership",
@@ -67,6 +75,7 @@ export const servicesData = [
   {
     title: "Community Outreach",
     imageUrl: "./images/team.jpg", // Reusing the Partnership Development image
+    path: "/services/partnershipDevelopment",
     id: 9,
     linkUrl: "Community Outreach",
     description:
@@ -75,6 +84,7 @@ export const servicesData = [
   {
     title: "Innovation & Sustainability Advocacy",
     imageUrl: "./images/solarField.avif", // Reusing the EV Charger Installations image
+    path: "/services/generalhousewiring",
     id: 10,
     linkUrl: "Innovation & Sustainability Advocacy",
     description:
