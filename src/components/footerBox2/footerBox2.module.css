@@ -1,0 +1,61 @@
+.box2 {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  flex: 0 0 auto;
+  text-align: left;
+  padding: 2rem 1.5rem;
+  color: #f3f4f6; /* Light text color */
+  border-radius: 12px;
+}
+
+.box2 h2 {
+  text-transform: capitalize;
+  color: #10B0D7; /* Accent color for heading */
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.box2 ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box2 ul li {
+  line-height: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #f3f4f6;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box2 ul li:hover {
+  background-color: #10B0D7; /* Highlight color on hover */
+  color: #ffffff;
+  padding-left: 1rem; /* Subtle indent animation */
+}
+
+hr {
+  margin: 0.5rem 0;
+  border: none;
+  border-top: 1px solid #374151; /* Divider color */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .box2 {
+    max-width: 18rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .box2 {
+    margin: 2rem 0;
+  }
+}

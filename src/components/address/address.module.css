@@ -1,0 +1,57 @@
+.wrapper,
+.wrapper2 {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto; /* Center alignment */
+  transform: translateX(-110%);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.wrapper2 {
+  transform: translateX(0);
+}
+.showSlide {
+  transform: translateX(0);
+}
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1f2937; /* Dark gray for main text */
+  text-align: center;
+}
+.title span {
+  color: #0ea5e9; /* Sky blue for emphasis */
+}
+.addressBox {
+  margin-bottom: 1.5rem;
+  user-select: none; /* Disable text selection */
+}
+.addressBox h2 {
+  color: #0ea5e9; /* Sky blue for headers */
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.addressBox p {
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #4b5563; /* Medium gray for descriptions */
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .addressBox h2 {
+    font-size: 1.1rem;
+  }
+  .addressBox p {
+    font-size: 1rem;
+  }
+}

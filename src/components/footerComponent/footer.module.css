@@ -1,0 +1,61 @@
+/* Main footer wrapper */
+.wrapper {
+  width: 100%;
+  padding: 4rem 3rem;
+  background-color: #1f2937; /* Dark background for a sleek appearance */
+  color: #f3f4f6; /* Light text color for readability */
+}
+
+/* Container for footer boxes */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem; /* Added spacing for better structure */
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Divider line */
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #4b5563; /* Subtle line for separation */
+  margin: 1rem 0;
+}
+
+/* Copyright text */
+.copyRight {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+  color: #d1d5db; /* Soft gray for secondary text */
+}
+
+.copyRight span {
+  color: #10B0D7; /* Accent color for the brand */
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 3.5rem 2rem;
+  }
+
+  .container {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .container {
+    flex-direction: column; /* Stack boxes vertically on small screens */
+    gap: 2rem;
+  }
+}

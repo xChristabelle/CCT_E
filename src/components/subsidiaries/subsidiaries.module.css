@@ -1,0 +1,90 @@
+/* Main dropdown container */
+.container {
+  width: 100%;
+  max-width: 18rem;
+  border-top: 2px solid #0ea5e9; /* Subtle border with a professional blue shade */
+  background-color: #ffffff; /* Clean white background */
+  padding: 0.75rem; /* Slightly increased padding for better spacing */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 0.5rem; /* Rounded corners for a modern look */
+  position: fixed;
+  right: 5rem;
+  top: 6.5rem;
+  z-index: 1000; /* Ensure it stays above other elements */
+  transform: translateY(20%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smoother transition */
+}
+
+/* Show dropdown */
+.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hidden by default */
+.open {
+  display: none;
+}
+
+/* Submenu open state */
+.openSub {
+  display: block;
+}
+
+/* Dropdown links */
+.link {
+  width: 100%;
+  cursor: pointer;
+  padding: 0.6rem 0.75rem; /* Added padding for better touch targets */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151; /* Neutral text color for readability */
+  border-radius: 0.375rem; /* Slight rounding for hover effect */
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.link:hover {
+  background-color: #0ea5e9; /* Professional blue hover background */
+  color: #ffffff; /* White text on hover for contrast */
+  padding-left: 1rem; /* Smooth padding animation */
+}
+
+/* Divider line */
+hr {
+  margin: 0.75rem 0;
+  border: none;
+  border-top: 1px solid #e5e7eb; /* Light gray divider for subtle separation */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1000px) {
+  .container {
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    display: none; /* Hide on small screens */
+  }
+  .mobileShowContainer {
+    display: block;
+    right: 3.5rem;
+    top: 22rem;
+    transform: translate(70%, 0);
+  }
+  .show {
+    transform: translateX(5%);
+  }
+  .link {
+    font-size: 0.85rem; /* Slightly smaller text for mobile */
+    line-height: 2rem;
+    padding: 0.5rem 0.5rem;
+  }
+  hr {
+    margin: 0.5rem 0;
+  }
+}

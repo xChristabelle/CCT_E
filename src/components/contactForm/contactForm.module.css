@@ -1,0 +1,47 @@
+.container,
+.container2 {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(110%);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.container2 {
+  transform: translateX(0);
+}
+.showSlide {
+  transform: translateX(0);
+}
+.nameEmail {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.messages {
+  resize: none;
+  min-height: 12rem;
+  width: 100%;
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1.5rem;
+  background-color: #f9fafb; /* Light background for inputs */
+  color: #111827; /* Dark text for contrast */
+}
+.messages:focus {
+  border-color: #0ea5e9; /* Green accent when focused */
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.messages::placeholder {
+  font-size: 0.9rem;
+  color: #6b7280; /* Subtle placeholder text */
+}
+@media screen and (max-width: 650px) {
+  .nameEmail {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

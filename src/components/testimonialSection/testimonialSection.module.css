@@ -1,0 +1,136 @@
+/* Wrapper and general layout */
+.wrapper {
+  width: 100%;
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Container for slides */
+.container {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the content horizontally */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Content wrapper for the slides */
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensure text is centered vertically */
+  opacity: 0;
+  position: absolute;
+  transition: all 2s ease-in-out;
+  text-align: center; /* Center text inside the slide */
+  padding: 0 2rem; /* Add some padding to prevent text from touching the edges */
+  font-size: 1.2rem; /* Increased font size */
+  line-height: 3.5rem; /* Adjusted line height for better readability */
+  color: #ffffff;
+}
+
+/* Active slide to show */
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Next and previous slide positions */
+.nextSlide {
+  transform: translateX(100%);
+}
+
+.lastSlide {
+  transform: translateX(-100%);
+}
+
+/* Arrows for navigation */
+.arrows {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  transition: all 5s ease-out;
+}
+
+.arrowLeft,
+.arrowRight {
+  background-color: #ffffff;
+  opacity: 0.7; /* Slight transparency for a cleaner look */
+  width: 3rem; /* Ensure a consistent size for arrows */
+  height: 3rem; /* Consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%; /* Perfectly circular arrows */
+  border: 2px solid #ccc; /* Optional border for better definition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transition: all 0.3s ease-in-out;
+  margin-right: 2rem; 
+  margin-left: 2rem; 
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  opacity: 1; /* Full opacity on hover */
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Positioning for left arrow */
+.arrowLeft {
+  position: absolute;
+  left: 1rem; /* Adjusted for consistent positioning */
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Positioning for right arrow */
+.arrowRight {
+  position: absolute;
+  right: 1rem; /* Adjusted for consistent positioning */
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* Icon font size for arrows */
+.arrowFont {
+  font-size: 1.5rem; /* Balanced icon size */
+  color: #333; /* Darker color for visibility */
+}
+
+/* Hover effect for arrows */
+.container:hover .arrowLeft {
+  transform: translate(-50%, -50%) scale(1.1); /* Slight zoom effect */
+}
+
+.container:hover .arrowRight {
+  transform: translate(50%, -50%) scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive adjustment for smaller screens */
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 4rem 1.5rem;
+  }
+
+  .contentWrapper {
+    transition: all 1s ease-in-out;
+    font-size: 2rem; /* Increase font size for better readability on small screens */
+  }
+}

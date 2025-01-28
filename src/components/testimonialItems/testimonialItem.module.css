@@ -1,0 +1,56 @@
+/* testimonialItem.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(143, 143, 143, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(2px); /* Apply blur effect */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 750px; /* Increased width */
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Secontainer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.photo {
+  width: 180px; /* Slightly larger profile picture */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0078ff;
+  margin-bottom: 16px;
+}
+
+.infoBox {
+  margin-bottom: 12px;
+}
+
+.infoBox h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff; /* Bright white for better contrast */
+  margin: 0;
+}
+
+.infoBox p {
+  font-size: 1.2rem;
+  color: #e6e6e6; /* Lighter gray for better readability */
+  margin: 4px 0;
+}
+
+.quotes {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #f0f0f0; /* Slightly brighter for visibility */
+  line-height: 1.6;
+  margin-top: 12px;
+}

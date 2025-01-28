@@ -1,0 +1,78 @@
+.box1 {
+  width: 100%;
+  max-width: 25rem; /* Increased max-width for a larger layout */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:left;
+  padding: 2rem;
+  color: #f3f4f6; /* Light text for better contrast */
+}
+
+.logo {
+  display: block;
+  max-width: 8rem; /* Enlarged logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+.box1 p {
+  font-size: 0.9rem; /* Professional, readable font size */
+  line-height: 1.6; /* Adjusted line height for readability */
+  margin-bottom: 1.5rem;
+}
+
+.socialmediaBox {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Even spacing between icons */
+}
+
+.socialmediaBox span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaIcons {
+  font-size: 2rem;
+  color: #ffffff; /* Icon color */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.mediaIcons:hover {
+  color: #10B0D7; /* Accent green color on hover */
+  transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .box1 {
+    max-width: 20rem; /* Adjusted for smaller screens */
+  }
+
+  .logo {
+    max-width: 6rem; /* Slightly smaller logo */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .box1 {
+    padding: 1.5rem; /* Compact padding */
+  }
+
+  .logo {
+    max-width: 5rem;
+  }
+
+  .box1 p {
+    font-size: 0.85rem; /* Smaller font size */
+  }
+}
