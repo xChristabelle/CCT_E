@@ -19,7 +19,7 @@ function App() {
   const [arrowScrollUp, setArrowScrollUp] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 50) { 
       setScrollUp(true);
     } else {
       setScrollUp(false);
